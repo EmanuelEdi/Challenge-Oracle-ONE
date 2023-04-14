@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoder - ONE</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./imagenes/logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="conteudo">
+            <img class="logo" src="./imagenes/logo.svg" alt="logo alura">
+            <h1 class="titulo_logo">Decoder</h1>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="conteudo">
+            <div class="criptografia">
+                <form class="criptografia_form">
+                    <div class="texto_em_area">
+                        <textarea name="texto" id="texto"  placeholder="Digite o seu texto aqui" ></textarea>
+                        <div class="texto_info">
+                            <div class="info">
+                                <img src="./imagenes/circulo-exclamacao.svg">
+                                <p id="advertencia">Apenas Letras Minúsculas</p>
+                            </div>
+    
+                        </div>
+    
+                        <div class="btn">
+                            <button id="encri" class="btn_criptografia" type="button"><img src="./imagenes/cadiado.svg">Criptografar</button>
+                            <button id="desencri" class="btn_descriptografar" type="button"><img src="./imagenes/cadiado-aberto.svg">Descriptografar</button>
+                        </div>
+                    </div>
+                </form>
+    
+                <div class="resultado">
+
+                    <div class="conteudo_resultado">
+                        <div class="conteudo_resolvido" id="noResuelto">
+                            <div class="imagen_resultado">
+                                <img src="./imagenes/noctis.png" alt="imagen do Noctis">
+                            </div>
+                            <p>Nenhuma mensagem foi encontrada</p>
+                            <p>Digite o texto que deseja criptografar ou descriptografar.</p>
+                            </div>
+                
+                            <div class="conteudo_resolvido" id = "resuelto">
+                                <textarea name="texto_resultado" id="textoResultado" disabled></textarea>
+                                <button id="copiar" type="button"><img src="./imagenes/copia.svg">Copiar</button>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+            </div>
+    
+        </div>
+    </main>
+
+    <footer>
+        <p class="copyright">© Criado por <a href="https://github.com/EmanuelEdi" target="_blank">EmanuelEdi</a></p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
